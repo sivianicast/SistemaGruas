@@ -176,3 +176,16 @@ C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Logica\obj\Debug\
 C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Logica\obj\Debug\Logica.dll
 C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Logica\obj\Debug\Logica.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Logica.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Logica.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Entidades.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Proyecto Progra 3.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Entidades.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Entidades.dll.config
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\obj\Debug\Logica.dll
+C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Logica\obj\Debug\Logica.pdb
