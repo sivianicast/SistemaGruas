@@ -59,77 +59,6 @@ namespace AccesoDatos
 
         #region PUBLICOS
         #region ejecutarSentecia
-
-
-
-        //nuevo
-
-        public bool AgregarSentenciaEnTransaccion(SQLSentencia P_Peticion,
-                                                 ref List<SqlCommand> P_Lista)
-        {
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-
-                //ASigna los valores del QUERY a ejecutar en SQL
-                cmd.Connection = objconexion; //ASigna conexion
-                cmd.CommandType = System.Data.CommandType.Text; //ASigna el tipo
-                cmd.CommandText = P_Peticion.Peticion; //ASigna peticion recibida
-
-                if (P_Peticion.lstParametros.Count > 0) //Consulta si tiene parametros
-                    cmd.Parameters.AddRange(P_Peticion.lstParametros.ToArray()); //Los asigna
-
-                //Ejecutar la sentencia
-                P_Lista.Add(cmd);
-                EjecutarTransaccion(P_Lista);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-        }
-
-
-        public void r()
-        {
-
-            SqlTransaction objtran;
-            ABRIR();
-            objtran = objconexion.BeginTransaction();
-            objtran.Rollback();
-
-        }
-
-        public bool EjecutarTransaccion(List<SqlCommand> P_Lista)
-        {
-            SqlTransaction objtran;
-            ABRIR();
-            objtran = objconexion.BeginTransaction();
-            objtran.Save("s1");
-           
-                //Ejecucion en BD
-                objtran.Commit();
-            
-            
-            
-                CERRAR();
-            
-
-            return true;
-
-        }
-
-        //nuevo
-
-
-
-
-
-
-
-
         //Metodo que ejecuta la sentencia para eliminar, modificar, agregar
         public bool ejecutarSentecia(SQLSentencia peticion)
         {
@@ -530,9 +459,9 @@ namespace AccesoDatos
                         Caso caso = new Caso();
                         caso.idCaso = (int)item.ItemArray[0];
                         caso.idGrua = (int)item.ItemArray[1];
-                        caso.ubicacionCaso = item.ItemArray[2].ToString();
-                        caso.kilometraje = (float)item.ItemArray[3];
-                        caso.costoPorKilometraje = (int)item.ItemArray[4];
+                        caso.nombreCaso = item.ItemArray[2].ToString();
+                        caso.estadoCaso = (bool)item.ItemArray[3];
+                        caso.kilometraje = (double)item.ItemArray[4];
                         caso.costoCaso = (int)item.ItemArray[5];
                         listaResultado.Add(caso);
                     }
@@ -547,48 +476,6 @@ namespace AccesoDatos
             }
             return listaResultado;
         }
-
-
-
-        //Metodo para cosultar lista de Gruas en la base de datos
-        public List<Grua> consultarGruasporES(SQLSentencia peticion)
-        {
-            List<Grua> listaResultado = new List<Grua>();
-            DataTable dt = new DataTable();
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = objconexion;
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = peticion.Peticion;
-                if (peticion.lstParametros.Count > 0)
-                    cmd.Parameters.AddRange(peticion.lstParametros.ToArray());
-                SqlDataAdapter objCaptura = new SqlDataAdapter(cmd);
-                objCaptura.Fill(dt);
-                if (dt.Rows.Count > 0)
-                    foreach (DataRow item in dt.Rows)
-                    {
-                        Grua grua = new Grua();
-                        grua.idGrua = (int)item.ItemArray[0];
-                        grua.idChofer = (int)item.ItemArray[1];
-                        grua.ubicacion = item.ItemArray[2].ToString();
-                        grua.estadoGrua = item.ItemArray[3].ToString();
-                        grua.cantidadServiciosAtendidos = (int)item.ItemArray[4];
-                        listaResultado.Add(grua);
-                    }
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            finally
-            {
-                this.CERRAR();
-            }
-            return listaResultado;
-        }
-
         #endregion
         #endregion
     }

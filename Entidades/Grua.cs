@@ -15,6 +15,7 @@ namespace Entidades
         public int cantidadServiciosAtendidos { get; set; }
         public Grua()
         {
+            
         }
     }
 }

@@ -51,7 +51,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(93, 196);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -61,7 +61,7 @@
             this.btnAdd.Location = new System.Drawing.Point(197, 196);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 2;
+            this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -71,7 +71,7 @@
             this.btnClear.Location = new System.Drawing.Point(0, 196);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 3;
+            this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -132,7 +132,7 @@
             this.cboxEstado.Location = new System.Drawing.Point(110, 129);
             this.cboxEstado.Name = "cboxEstado";
             this.cboxEstado.Size = new System.Drawing.Size(130, 21);
-            this.cboxEstado.TabIndex = 9;
+            this.cboxEstado.TabIndex = 3;
             this.cboxEstado.SelectedIndexChanged += new System.EventHandler(this.cboxEstado_SelectedIndexChanged);
             // 
             // texbNombre
@@ -140,7 +140,7 @@
             this.texbNombre.Location = new System.Drawing.Point(110, 76);
             this.texbNombre.Name = "texbNombre";
             this.texbNombre.Size = new System.Drawing.Size(130, 20);
-            this.texbNombre.TabIndex = 8;
+            this.texbNombre.TabIndex = 2;
             // 
             // texboxId
             // 
@@ -148,7 +148,7 @@
             this.texboxId.Location = new System.Drawing.Point(110, 30);
             this.texboxId.Name = "texboxId";
             this.texboxId.Size = new System.Drawing.Size(38, 20);
-            this.texboxId.TabIndex = 7;
+            this.texboxId.TabIndex = 1;
             this.texboxId.Click += new System.EventHandler(this.texboxId_Click);
             this.texboxId.TextChanged += new System.EventHandler(this.texboxId_TextChanged);
             // 
@@ -158,7 +158,7 @@
             this.dgChoferes.Location = new System.Drawing.Point(355, 29);
             this.dgChoferes.Name = "dgChoferes";
             this.dgChoferes.Size = new System.Drawing.Size(433, 409);
-            this.dgChoferes.TabIndex = 8;
+            this.dgChoferes.TabIndex = 0;
             this.dgChoferes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgChoferes_CellContentClick);
             this.dgChoferes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgChoferes_CellContentClick);
             // 
@@ -177,7 +177,7 @@
             this.textBoxSearch.Location = new System.Drawing.Point(398, 3);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(133, 20);
-            this.textBoxSearch.TabIndex = 10;
+            this.textBoxSearch.TabIndex = 7;
             // 
             // label4
             // 

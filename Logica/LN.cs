@@ -576,24 +576,6 @@ namespace Logica
             }
         }
 
-
-
-        public static bool modificarIngresoChoferCaso(int i, int ingreso)
-        {
-            try
-            {
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Chofer_ModificarIngreso '" + i + "','" + ingreso + "'";
-                AD acceso = new AD();
-                return acceso.ejecutarSentecia(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-
         public static bool modificarChofer(Chofer chofer)
         {
             try
@@ -623,28 +605,6 @@ namespace Logica
                 throw ex;
             }
         }
-
-
-
-
-
-        public static List<Grua> ConsultaGruaPorEstadoYServicios(string e, int cant)
-        {
-            try
-            {
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Gruas_ConsultaporEstadoYServicios '" + e + "','" + cant + "'";
-
-                AD objacceso = new AD();
-                return objacceso.consultarGruasporES(peticion);
-            }
-            catch (Exception exc)
-            {
-                throw exc;
-            }
-        }
-
-
 
         public static List<Chofer> ConsultaChofer(Chofer chofer)
         {
@@ -679,6 +639,20 @@ namespace Logica
                 throw;
             }
         }
+        public static List<Chofer> ConsultaChoferRelacionados()
+        {
+            try
+            {
+                SQLSentencia sentencia = new SQLSentencia();
+                sentencia.Peticion = @"EXEC PA_Choferes_Relacionados";
+                AD acceso = new AD();
+                return acceso.consultarChoferesNoRelacionados(sentencia);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         #endregion
         #region Metodos grua
 
@@ -687,41 +661,22 @@ namespace Logica
             try
             {
                 SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = "PA AGREGAR GRUA";
-                AD acceso = new AD();
-                return acceso.ejecutarSentecia(peticion);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-
-
-
-        public static bool modificarGruaPorid(int i,string u, string e)
-        {
-            try
-            {
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Grua_ModoficarUbicacionYEstado '" + i + "','" + u + "','" + e + "'";
-                AD acceso = new AD();
-                return acceso.ejecutarSentecia(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-
-        public static bool actualizarCasosAtendidos(int i)
-        {
-            try
-            {
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = "PA_Choferes_ModificarCasosAtendidos '" + i + "'";
+                peticion.Peticion = @"EXEC PA_Gruas_Add @idChofer, @ubicacion, @estado";
+                SqlParameter paramIdChofer = new SqlParameter();
+                paramIdChofer.Value = grua.idChofer;
+                paramIdChofer.ParameterName = "@idChofer";
+                paramIdChofer.SqlDbType = System.Data.SqlDbType.Int;
+                SqlParameter paramUbicacion = new SqlParameter();
+                paramUbicacion.Value = grua.ubicacion;
+                paramUbicacion.ParameterName = "@ubicacion";
+                paramUbicacion.SqlDbType = System.Data.SqlDbType.VarChar;
+                SqlParameter paramEstado = new SqlParameter();
+                paramEstado.Value = grua.estadoGrua;
+                paramEstado.ParameterName = "@estado";
+                paramEstado.SqlDbType = System.Data.SqlDbType.VarChar;
+                peticion.lstParametros.Add(paramIdChofer);
+                peticion.lstParametros.Add(paramUbicacion);
+                peticion.lstParametros.Add(paramEstado);
                 AD acceso = new AD();
                 return acceso.ejecutarSentecia(peticion);
             }
@@ -730,20 +685,33 @@ namespace Logica
                 throw ex;
             }
         }
-
-
-
-       
-
-
-
 
         public static bool modificarGrua(Grua grua)
         {
             try
             {
                 SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = "PA MODIFICAR GRUA";
+                peticion.Peticion = @"EXEC PA_Grua_Update @idGrua, @idChofer, @ubicacion, @estado";
+                SqlParameter paramIdGrua = new SqlParameter();
+                paramIdGrua.Value = grua.idGrua;
+                paramIdGrua.ParameterName = "@idGrua";
+                paramIdGrua.SqlDbType = System.Data.SqlDbType.Int;
+                SqlParameter paramIdChofer = new SqlParameter();
+                paramIdChofer.Value = grua.idChofer;
+                paramIdChofer.ParameterName = "@idChofer";
+                paramIdChofer.SqlDbType = System.Data.SqlDbType.Int;
+                SqlParameter paramUbicacion = new SqlParameter();
+                paramUbicacion.Value = grua.ubicacion;
+                paramUbicacion.ParameterName = "@ubicacion";
+                paramUbicacion.SqlDbType = System.Data.SqlDbType.VarChar;
+                SqlParameter paramEstado = new SqlParameter();
+                paramEstado.Value = grua.estadoGrua;
+                paramEstado.ParameterName = "@estado";
+                paramEstado.SqlDbType = System.Data.SqlDbType.VarChar;
+                peticion.lstParametros.Add(paramIdGrua);
+                peticion.lstParametros.Add(paramIdChofer);
+                peticion.lstParametros.Add(paramUbicacion);
+                peticion.lstParametros.Add(paramEstado);
                 AD acceso = new AD();
                 return acceso.ejecutarSentecia(peticion);
             }
@@ -780,7 +748,7 @@ namespace Logica
             try
             {
                 SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Usuarios_InsertarCaso '" + caso.idGrua + "','" + caso.ubicacionCaso + "','" + caso.kilometraje + "','" + caso.costoPorKilometraje + "','" + caso.costoCaso + "'";
+                peticion.Peticion = "PA AGREGAR GRUA";
                 AD acceso = new AD();
                 return acceso.ejecutarSentecia(peticion);
             }
@@ -820,94 +788,6 @@ namespace Logica
                 throw;
             }
         }
-
-
-
-        //prueba de transacciones 
-
-        public static bool AgregoCasoTrans(int i, string u, string e,int ingreso,Caso caso)
-        {
-            try
-            {
-
-                List<SqlCommand> lstSentencias = new List<SqlCommand>(); //Lista son las sentencias por ejecutar
-
-                AD acceso = new AD();
-                 SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Grua_ModoficarUbicacionYEstado '" + i + "','" + u + "','" + e + "'";
-                //return acceso.ejecutarSentecia(peticion);
-                acceso.AgregarSentenciaEnTransaccion(peticion, ref lstSentencias);
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-            try
-            {
-
-
-                List<SqlCommand> lstSentencias = new List<SqlCommand>(); //Lista son las sentencias por ejecutar
-
-                AD acceso = new AD();
-
-
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = "PA_Choferes_ModificarCasosAtendidos '" + i + "'";
-                acceso.AgregarSentenciaEnTransaccion(peticion, ref lstSentencias);
-
-                // return acceso.ejecutarSentecia(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-            try
-            {
-
-                List<SqlCommand> lstSentencias = new List<SqlCommand>(); //Lista son las sentencias por ejecutar
-
-                AD acceso = new AD();
-
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Chofer_ModificarIngreso '" + i + "','" + ingreso + "'";
-                acceso.AgregarSentenciaEnTransaccion(peticion, ref lstSentencias);
-
-                //  return acceso.ejecutarSentecia(peticion);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            try
-            {
-                List<SqlCommand> lstSentencias = new List<SqlCommand>(); //Lista son las sentencias por ejecutar
-
-                AD acceso = new AD();
-
-
-
-                SQLSentencia peticion = new SQLSentencia();
-                peticion.Peticion = @"EXEC PA_Usuarios_InsertarCaso '" + caso.idGrua + "','" + caso.ubicacionCaso + "','" + caso.kilometraje + "','" + caso.costoPorKilometraje + "','" + caso.costoCaso + "'";
-                // return acceso.AgregarSentenciaEnTransaccion(peticion, ref lstSentencias);
-                // return acceso.EjecutarTransaccion(peticion);
-
-                acceso.ejecutarSentecia(peticion);
-                return true;
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-
-
-        }
-
-
-
         #endregion
     }
 }
