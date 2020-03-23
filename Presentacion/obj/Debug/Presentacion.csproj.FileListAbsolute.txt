@@ -274,28 +274,55 @@ C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Presentacion\obj\Debug\Pres
 C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3\Presentacion\obj\Debug\Presentacion.pdb
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.exe.config
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.exe
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.pdb
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.dll
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Logica.dll
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.dll
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.pdb
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.dll.config
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Logica.pdb
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.pdb
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.dll.config
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Choferes.frmChoferP.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Consultas.frmListaUsuarios.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.frmLogin.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.frmMenuPrincipal.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Gruas.frmGrua.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Perfiles.P.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Usuarios.UsuarioForm.resources
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.exe
-C:\Users\Admin\Desktop\gruas josue\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Logica.dll
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Logica.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Choferes.frmChoferP.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Consultas.frmListaUsuarios.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.frmLogin.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.frmMenuPrincipal.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Gruas.frmGrua.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Perfiles.P.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Usuarios.UsuarioForm.resources
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\VIERNES\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Procesos.frmRegistroCasos.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.dll
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Logica.dll
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.dll
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.pdb
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Entidades.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Logica.pdb
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.pdb
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\bin\Debug\Proyecto Progra 3.dll.config
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Choferes.frmChoferP.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Consultas.frmListaUsuarios.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.frmLogin.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.frmMenuPrincipal.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Gruas.frmGrua.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Perfiles.P.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Procesos.frmRegistroCasos.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.Usuarios.UsuarioForm.resources
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\cavu9\OneDrive\Escritorio\doming\Proyecto Progra 3.1\Presentacion\obj\Debug\Presentacion.pdb

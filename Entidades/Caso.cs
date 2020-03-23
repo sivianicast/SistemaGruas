@@ -10,10 +10,11 @@ namespace Entidades
     {
         public int idCaso { get; set; }
         public int idGrua { get; set; }
-        public string nombreCaso { get; set; }
-        public bool estadoCaso { get; set; }
-        public double kilometraje { get; set; }
+        public string ubicacionCaso { get; set; }
+        public float kilometraje { get; set; }
+        public int costoPorKilometraje{ get; set; }
         public int costoCaso { get; set; }
+
         public Caso()
         {
         }

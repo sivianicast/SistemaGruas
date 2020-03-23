@@ -15,6 +15,7 @@ using Presentacion.Perfiles;
 using Presentacion.Consultas;
 using Presentacion.Choferes;
 using Presentacion.Gruas;
+using Presentacion.Procesos;
 
 namespace Presentacion
 {
@@ -46,17 +47,17 @@ namespace Presentacion
             tsslUsuarioConectado.Text = Usuario;
             int op1 = 0;
 
-       
+
             int AccesoMenu = LN.VerificarAcceso(new Usuario { nombreUsuario = Usuario });
 
-            consultasToolStripMenuItem.Visible = false;
-            catalogosToolStripMenuItem.Visible = false;
-            sistemaToolStripMenuItem.Visible = false;
+            consultasToolStripMenuItem.Visible = true;
+            catalogosToolStripMenuItem.Visible = true;
+            sistemaToolStripMenuItem.Visible = true;
             switch (AccesoMenu)
             {
                 case 1:
                     {
-                        consultasToolStripMenuItem.Visible = false;
+                        consultasToolStripMenuItem.Visible = true;
                         catalogosToolStripMenuItem.Visible = true;
                         sistemaToolStripMenuItem.Visible = true;
                         cerrarSistemaToolStripMenuItem1.Visible = true;
@@ -65,7 +66,7 @@ namespace Presentacion
                 case 2:
                     {
                         consultasToolStripMenuItem.Visible = true;
-                        catalogosToolStripMenuItem.Visible = false;
+                        catalogosToolStripMenuItem.Visible = true;
                         sistemaToolStripMenuItem.Visible = true;
                         cerrarSistemaToolStripMenuItem.Visible = false;
                         perfilToolStripMenuItem.Visible = false;
@@ -86,19 +87,27 @@ namespace Presentacion
                     break;
 
             }
-           
+
         }
 
         #endregion
-        
+
+
+
+
+
+
+
+
+
         private void Principal_Load(object sender, EventArgs e)
         {
-
+			
 
         }
 
-        private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+		private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
             UsuarioForm frm = new UsuarioForm();
             frm.MdiParent = this;
             frm.Show();
@@ -106,31 +115,31 @@ namespace Presentacion
             // llama a usuario
         }
 
-        private void frmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+		private void frmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
 
-        private void choferesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmChoferes frm = new frmChoferes();
-            frm.MdiParent = this;
-            frm.Show();
-        }
+		private void choferesToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frmChoferes frm = new frmChoferes();
+			frm.MdiParent = this;
+			frm.Show();
+		}
 
-        private void gruasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmGruas frm = new frmGruas();
-            frm.MdiParent = this;
-            frm.Show();
-        }
+		private void gruasToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frmGruas frm = new frmGruas();
+			frm.MdiParent = this;
+			frm.Show();
+		}
 
-        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmUsuarios frm = new frmUsuarios();
-            frm.MdiParent = this;
-            frm.Show();
-        }
+		private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frmUsuarios frm = new frmUsuarios();
+			frm.MdiParent = this;
+			frm.Show();
+		}
 
         private void listaDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -152,7 +161,7 @@ namespace Presentacion
 
         private void perfilToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
             P frm = new P();
             frm.MdiParent = this;
             frm.Show();
@@ -168,6 +177,13 @@ namespace Presentacion
         private void gruasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmGrua frm = new frmGrua();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void añadirCasoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegistroCasos frm = new frmRegistroCasos();
             frm.MdiParent = this;
             frm.Show();
         }
