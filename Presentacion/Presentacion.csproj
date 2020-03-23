@@ -132,6 +132,9 @@
     <EmbeddedResource Include="Perfiles\P.resx">
       <DependentUpon>P.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmRegistroCasos.resx">
+      <DependentUpon>frmRegistroCasos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

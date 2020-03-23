@@ -52,7 +52,6 @@ namespace Presentacion.Choferes
                 dt.Columns.Add("Estado Chofer");
                 foreach (Chofer item in listaChoferes)
                 {
-                    if (item.idChofer == 0) continue;
                     dt.Rows.Add
                         (
                             item.idChofer,
@@ -111,41 +110,12 @@ namespace Presentacion.Choferes
                 chofer.idChofer = Int32.Parse(texboxId.Text.Trim());
                 chofer.nombreChofer = texbNombre.Text.Trim();
                 chofer.estadoChofer = cboxEstado.SelectedItem.ToString().Equals("Activo") ? true : false;
-                if (validarChoferInactivo( chofer.idChofer))
-                {
-                    MessageBox.Show("El chofer tiene una grua asignada");
-                }
-                else
-                {
-                    LN.modificarChofer(chofer);
-                    MessageBox.Show("Chofer Modificado");
-                    limpiarDatos();
-                    CargarDataGridChoferes();
-                }
+                LN.modificarChofer(chofer);
+                MessageBox.Show("Chofer Modificado");
+                limpiarDatos();
+                CargarDataGridChoferes();
             }
         }
-        private bool validarChoferInactivo ( int id)
-        {
-            try
-            {
-            bool validar = false;
-                List<Chofer> listaId = new List<Chofer>();
-                listaId = LN.ConsultaChoferRelacionados();
-                foreach (Chofer item in listaId)
-                {
-                    if (item.idChofer == id)
-                    {
-                    validar = true;
-                    }
-                }
-            return validar;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-            
         private bool validarCampos(int tipo)
         {
             int cont = 0;
@@ -226,6 +196,7 @@ namespace Presentacion.Choferes
             }
             catch (Exception)
             {
+
                 throw;
             }
         }
